@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="apkacrm">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>SuperCRM</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400&subset=latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+
+        <link href="css_style_crm/bootstrap.min.css" rel="stylesheet">
+        <link href="css_style_crm/font-awesome.min.css" rel="stylesheet">
+        <link href="css_style_crm/main.css" rel="stylesheet">
+
+    </head>
+    <body ng-controller="MainCtrl">
+
+        <div id="outer-wrapper">
+            <div id="sidebar">
+                <div class="semifluid-layout">
+                    <div class="btn-rwd-menu">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="sidebar-logo">
+                        <p>CRM Application</p>
+                    </div>
+                    <nav class="sidebar-navigation">
+                        <ul>
+                            <li ng-class="{active: routetest.isActive('/clients')}">
+                                <a href="/#/clients">
+                                    <i class="fa fa-users"></i>
+                                    <span>Klienci</span>
+                                </a>
+                            </li>
+                            <li ng-class="{active: routetest.isActive('/sectors')}">
+                                <a href="/#/sectors">
+                                    <i class="fa fa-database"></i>
+                                    <span>Branże</span>
+                                </a>
+                            </li>
+                            <li ng-class="{active: routetest.isActive('/users')}">
+                                <a href="/#/users">
+                                    <i class="fa fa-cogs"></i>
+                                    <span>Użytkownicy systemu</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-copyrights">
+                        Copyright &copy; Michał Lenczowski 
+                    </div>
+                </div>
+            </div>
+            <div id="main">
+                <div class="nav navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5 col-xs-7  user-area">
+                                <ul class="nav navbar-nav navbar-right user-nav">
+                                    <li class="profile_menu ">
+                                        <a href="#">
+                                            <img src="img/user-avatar.jpg" alt="użytkownik">
+                                            <span>Użytkownik</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div ng-view>
+               </div>
+            </div>
+      
+
+        <script src="javascript_crm/jquery.js"></script>
+        <script src="javascript_crm/bootstrap.min.js"></script>
+        <script src="javascript_crm/main.js"></script>
+        <script src="javascript_crm/angular.min.js"></script>
+         <script src="javascript_crm/angular-route.min.js"></script>
+        
+        <script src="https://code.angularjs.org/1.6.1/angular-messages.js"></script>
+        <script src="javascript_crm/angular-locale_pl-pl.js"></script>
+         <script src="javascript_crm/services.js"></script>
+
+          <script src="javascript_crm/app.js"></script>
+
+    </body>
+</html>
