@@ -14,7 +14,7 @@
 		
 		this.users=[
 			{id:1,manager_name: 'Konstantyn Kowalski'},
-			{id:2,manager_name: 'Łukasz Pawłowski'},
+			{id:2,manager_name: 'Kamil Pawłowski'},
 			{id:3,manager_name: 'Zofia Jabłońska'},
 			{id:4,manager_name: 'Jan Kowalski'},
 			{id:5,manager_name: 'Adam Nowak'}
